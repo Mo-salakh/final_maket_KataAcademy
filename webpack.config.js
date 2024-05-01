@@ -31,7 +31,7 @@ module.exports = {
           }
         }
       },
-
+      
       // Компилируем SCSS в CSS
       {
         test: /\.scss$/,
