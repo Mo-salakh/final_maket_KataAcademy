@@ -1,0 +1,60 @@
+.burger-navigation {
+  max-width: 320px;
+  
+  &__head{
+    align-items: center;
+  }
+
+  &__list{
+    margin-top: 37px;
+    a {
+      color: $color-black;
+    }
+  }
+
+  &__item{
+    &:not(:last-child){
+      margin-bottom: 25px;
+    }
+  }
+
+  &__footer{}
+
+  &__icon img{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.burger_btn {
+  display: inline-block;
+}
+.burger_open,
+.burger_close{
+  background-position: center;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.burger_close {
+  background-image: url('./../img/header_img/burger_close.png');
+}
+.burger_open {
+  background-image: url('./../img/header_img/burger.png');
+}
+.logo {
+}
+
+.search {
+}
+
+.email_adress {
+}
+.number {
+}
+.languages {
+}
+.active {
+}

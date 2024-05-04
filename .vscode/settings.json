@@ -1,7 +1,7 @@
 {
   "git.autofetch": true,
   "cSpell.language": "en, ru",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "vscode-icons",
   "[html][css][scss][javascript]": {
     "editor.tabSize": 2,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -14,5 +14,5 @@
   "editor.formatOnSave": true,
   "terminal.integrated.defaultProfile.osx": "bash",
   "terminal.integrated.defaultProfile.linux": "bash",
-  "terminal.integrated.defaultProfile.windows":"bash"
+  "terminal.integrated.defaultProfile.windows": "bash"
 }

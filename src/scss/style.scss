@@ -1,17 +1,19 @@
-$bgColor: #24292e;
-$text: #fff;
+@import './abstracts/_mixins.scss';
+@import './abstracts/_variables.scss';
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
+@import './base/_base.scss';
+@import './base/_typography.scss';
+@import './base/_utilities.scss';
 
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
-}
+
+@import './components/_burger-nav.scss';
+@import './components/_icons.scss';
+
+
+@import './layout/_company.scss';
+@import './layout/_footer.scss';
+@import './layout/_header.scss';
+@import './layout/_main.scss';
+@import './layout/_price.scss';
+@import './layout/_repairs.scss';
+@import './layout/_service.scss';

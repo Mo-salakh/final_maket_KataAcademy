@@ -10,7 +10,97 @@
     <title>%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-    <img src="./img/webpack.svg" alt="Webpack Logo" width="200px" />
-    <h3>Bye iznovrn</h3>
+    <header class="header">
+      <div class="burger-navigation">
+        <div class="burger-navigation__head">
+          <a href="#" class="burger_btn">
+            <div class="burger_close"></div>
+          </a>
+          <img src="img/logo.svg" alt="logo" class="logo" />
+          <a href="#" class="burger-navigation__icon search">
+            <img src="img/header_img/search.png" alt="search_btn" />
+          </a>
+        </div>
+        <ul class="burger-navigation__list">
+          <li class="burger-navigation__item"
+            ><a href="#">Ремонт техники</a></li
+          >
+          <li class="burger-navigation__item"
+            ><a href="#">Услуги и сервисы</a></li
+          >
+          <li class="burger-navigation__item"
+            ><a href="#">Корпоративным клиентам</a></li
+          >
+          <li class="burger-navigation__item"
+            ><a href="#">Продавцам техники</a></li
+          >
+          <li class="burger-navigation__item"><a href="#">Партнерам</a></li>
+          <li class="burger-navigation__item"
+            ><a href="#">Производителям</a></li
+          >
+          <li class="burger-navigation__item"
+            ><a href="#">Наши сервисные центры</a></li
+          >
+          <li class="burger-navigation__item"><a href="#">Контакты</a></li>
+        </ul>
+
+        <div class="burger-navigation__footer">
+          <a href="#">
+            <img src="./img/header_img/call.png" alt="call_icon" class="burger-navigation__icon"
+          /></a>
+          <a href="#">
+            <img src="./img/header_img/chat.png" alt="chat_icon" class="burger-navigation__icon"
+          /></a>
+          <a href="#">
+            <img src="./img/header_img/profile.png" alt="profile_icon" class="burger-navigation__icon"
+          /></a>
+          <p class="email_adress">mail@cps.com</p>
+          <p class="number">8 800 890 8900</p>
+          <p class="languages">
+            <span class="active">RU</span>
+            <span>EN</span>
+            <span>CH</span>
+          </p>
+        </div>
+      </div>
+      <nav class="navbar"></nav>
+    </header>
+    <main class="main">
+      <section class="service">
+        <div class="service__scroll">
+          <ul class="service__list">
+            <li class="service__link service__link-active"><a href="#">Ремонтируемые устройства</a></li>
+            <li class="service__link"><a href="#">Дополнительные услуги</a></li>
+            <li class="service__link"><a href="#">Цены на услуги</a></li>
+            <li class="service__link"><a href="#">Адреса сервисных центров</a></li>
+            <li class="service__link"><a href="#">Специальные цены</a></li>
+            <li class="service__link"><a href="#">Отзывы</a></li>
+          </ul>
+        </div>
+        <div class="service__description">
+          <div class="service__text">
+            <p class="paragraph paragraph_first">
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя.
+            </p>
+            <p class="paragraph paragraph_second">
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного
+              партнера подтверждает большое количество постоянных клиентов. Мы
+              гордимся тем, что к нам обращаются по рекомендациям и, в свою
+              очередь, советуют нас родным и близким.
+            </p>
+            <p class="article">
+              <span>
+                <i class="icon-open"></i><a href="#">Читать далее</a>
+              </span></p>
+          </div>
+          <img src="img/main_img.jpg" alt="GPS_main_photo" class="service__img"/></div>
+        </section>
+      <section class="company"></section>
+      <section class="repairs"></section>
+      <section class="price"></section>
+    </main>
+    <footer class="footer"> </footer>
   </body>
 </html>
