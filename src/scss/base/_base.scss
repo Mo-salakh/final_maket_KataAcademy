@@ -10,7 +10,6 @@ body {
 
 .flex-container {
   display: flex;
-  gap: 0 30px;
   @include respond(tab-land) {
     display: block;
     gap: 0;
@@ -22,7 +21,5 @@ body {
 }
 
 .flex-block-2 {
-  @include respond(tab-land) {
-    padding: 0 24px;
-  }
+  
 }

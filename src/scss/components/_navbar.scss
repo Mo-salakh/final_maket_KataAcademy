@@ -3,23 +3,30 @@
   align-items: center;
   justify-content: space-between;
 
+
+
   &__wrapper{
     display: flex;
     align-items: center;
+
     @include respond(big-screen) {
       display: none;
     }
+
   }
 
   &__link{}
+
   &__menu{
     display: flex;
     justify-content: flex-end;
+
     @include respond(big-screen) {
       position: fixed;
       right: 20px;
       top: 2%;
     }
+
     @include respond(tab-land) {
       gap: 15px;
     }
@@ -29,12 +36,14 @@
 
 .burger {
   margin-right: 40px;
+
   @include respond(phone) {
     margin-right: 16px;
   }
 }
 .logo {
   position: relative;
+
   &::after {
     content: '';
     position: absolute;
@@ -44,6 +53,7 @@
     width: 2px;
     background-color: #EAEAEA;
     border-radius: 5px;
+
     @include respond(phone) {
       display: none;
     }
@@ -75,6 +85,7 @@
   color: $color-black;
   gap: 0 10px;
   margin: 10px 16px 0px;
+
   @include respond(tab-land) {
     margin: 0;  
     span {

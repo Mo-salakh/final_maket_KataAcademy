@@ -75,6 +75,9 @@
 
 .burger_btn {
   display: inline-block;
+  @include respond(big-screen) {
+    display: none;
+  }
 }
 .burger_open,
 .burger_close{

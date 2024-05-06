@@ -1,0 +1,27 @@
+
+.swiper {
+}
+
+.mySwiper {
+  max-height: 170px;
+  overflow: hidden;
+
+  @include respond(phone) {
+    height: auto;
+  }
+  
+}
+
+.swiper-wrapper {
+}
+
+.swiper-slide {
+  display: flex;
+}
+
+
+.swiper-pagination {
+  @include respond(tab-port) {
+    display: none;
+  }
+}

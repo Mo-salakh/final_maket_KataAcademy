@@ -21,11 +21,20 @@ a {
 
 
 .paragraph {
-
+  color: $color-black;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
 }
 
 .article {
+  margin-top: 0.8125rem;
 
+  @include respond(tab-land) {
+    margin-top: 10px;
+  }
+  @include respond(phone) {
+    margin: 16px 0;
+  }
 }
 
 .h1-title {
@@ -37,13 +46,34 @@ a {
     content: '';
     position: absolute;
     top: 6px;
-    left: -30px;
+    left: -32px;
     background-color: #41F6D7;
     width: 4px;
     height: 32px;
     border-radius: 0 5px 5px 0;
-    @include respond(tab-port) {
+    
+    @include respond(tab-land) {
       left: -24px;
     }
+
+    @include respond(phone) {
+      left: -16px;
+    }
+  }
+}
+.h2-title {
+  font-size: 1rem;
+  color: $color-gray;
+  padding: 16px 0 16px 32px;
+  margin: 50px 0 24px;
+
+  @include respond(tab-land) {
+    background-color: $color-white;
+    margin-top: 32px;
+    padding-left: 24px;
+  }
+
+  @include respond(phone) {
+    margin: 24px 0 14px;
   }
 }

@@ -1,0 +1,85 @@
+.company {
+  &__firms {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(220px, 1fr) );
+    gap: 16px 32px;
+    margin: 0 32px;
+
+    @include respond(big-screen) {
+      max-width: 86%;
+    }
+
+    @include respond(tab-land) {
+      max-width: 95%;
+      margin: 0 24px;
+      gap: 16px 24px;
+    }
+    
+    @include respond(phone) {
+      display: flex;
+      gap: 16px;
+      margin: 16px;
+    }
+
+  }
+  &__firm {
+    max-width: 240px;
+    max-height: 72px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #EAEAEA;
+
+    @include respond(phone) {
+      height: 72px !important;
+    }
+
+    img {
+      max-width: 50%;
+      max-height: 90%;
+    }
+  }
+
+  &__circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #FF3E79;
+
+    span {
+      transform: translate(130%, 50%) rotate(35deg);
+      position: relative;
+      background-color: #FF3E79;
+      width: 10px;
+      height: 2px;
+      display: inline-block;
+      border-radius: 2px;
+      &::before {
+        content: '';
+        position: absolute;
+        transform: rotate(-72deg);
+        top: 4px;
+        right: -3px;
+        background-color: #FF3E79;
+        width: 10px;
+        height: 2px;
+      }
+    }
+  }
+
+  &__show-text{
+    padding-left: 32px;
+    margin-top: 24px;
+
+    @include respond(tab-port) {
+      padding-left: 24px;
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+}
