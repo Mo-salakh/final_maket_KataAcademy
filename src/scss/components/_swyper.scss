@@ -3,8 +3,6 @@
 }
 
 .mySwiper {
-  max-height: 170px;
-  overflow: hidden;
 
   @include respond(phone) {
     height: auto;

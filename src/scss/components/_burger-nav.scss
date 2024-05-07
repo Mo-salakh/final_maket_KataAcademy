@@ -24,6 +24,12 @@
     a {
       color: $color-black;
     }
+    @include respond(tab-land) {
+      margin-top: 40px;
+    }
+    @include respond(phone) {
+      margin-top: 0;
+    }
   }
 
   &__item{
@@ -62,6 +68,10 @@
     margin-bottom: 30px;
     a:nth-child(2) > img{
       margin: 0 16px;
+    }
+
+    @include respond(phone) {
+      align-self: baseline;
     }
   }
 

@@ -27,27 +27,27 @@
     "not dead"
   ],
   "devDependencies": {
-    "@babel/core": "7.5.5",
-    "@babel/preset-env": "7.5.5",
-    "autoprefixer": "9.6.1",
-    "babel-loader": "8.0.6",
-    "copy-webpack-plugin": "5.1.0",
-    "css-loader": "3.2.0",
-    "file-loader": "4.2.0",
-    "gh-pages": "2.1.1",
-    "html-webpack-plugin": "3.2.0",
-    "mini-css-extract-plugin": "0.8.0",
-    "node-sass": "^4.14.1",
-    "postcss-loader": "3.0.0",
-    "sass-loader": "7.2.0",
-    "webpack": "4.41.2",
-    "webpack-cli": "3.3.7",
-    "webpack-dev-server": "^3.11.0"
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "autoprefixer": "latest",
+    "babel-loader": "latest",
+    "copy-webpack-plugin": "latest",
+    "css-loader": "latest",
+    "file-loader": "latest",
+    "gh-pages": "latest",
+    "html-webpack-plugin": "latest",
+    "mini-css-extract-plugin": "latest",
+    "node-sass": "latest",
+    "postcss-loader": "latest",
+    "sass-loader": "latest",
+    "webpack": "latest",
+    "webpack-cli": "latest",
+    "webpack-dev-server": "latest"
   },
   "engineStrict": true,
   "engines": {
-    "node": "~14.18.3",
-    "npm": "~6.14.15"
+    "node": ">=14.18.3 <21.0.0",
+    "npm": ">=6.14.15"
   },
   "postcss": {
     "plugins": {
