@@ -5,38 +5,19 @@ import showElements from './showGrid-Elements.mjs';
 showElements()
 import showBurger from './showBurger-menu.mjs'; 
 showBurger();
-
+import showInfolNav from './showInfoNav.mjs';
+showInfolNav();
+import showCallMenu from './showCallNav.mjs';
+showCallMenu();
+import swyperBreak from './swyperBreak.mjs';
+swyperBreak();
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 console.log('Works!')
 
 
 
-// // burger-navigation
-// const openButton = document.querySelector('.burger');
-// const closeButton = document.querySelector('.burger_close');
-// const sidebar = document.querySelector('.burger_navigation');
-// let switcher = true;
 
-// function openMenuButton() {
-//   if (switcher) {
-//     Object.assign(sidebar.style, {
-//       display: 'block',
-//       position: 'absolute',
-//       top: '0'
-//     })
-//   } else {
-//     sidebar.style.display = 'none'
-//   }
-
-//   switcher = !switcher
-// };
-
-// function closeMenuButton() {
-//   sidebar.style.display = 'none'
-//   switcher = !switcher
-// };
-
-// openButton.addEventListener('click', openMenuButton);
-// closeButton.addEventListener('click', closeMenuButton);
 
 // // Swyper
 // const swiper = new Swiper('.swiper', {

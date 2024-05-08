@@ -6,10 +6,6 @@ const text = btnShowElements.querySelector('span');
 const icon = btnShowElements.querySelector('i');
 let isHidden = false;
 
-console.log(gridElementsParent);
-console.log(btnShowElements);
-console.log(text);
-console.log(icon);
 
 function showElementsAndHide() {
   if(isHidden) {

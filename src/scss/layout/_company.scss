@@ -43,33 +43,6 @@
     }
   }
 
-  &__circle {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid #FF3E79;
-
-    span {
-      transform: translate(130%, 50%) rotate(35deg);
-      position: relative;
-      background-color: #FF3E79;
-      width: 10px;
-      height: 2px;
-      display: inline-block;
-      border-radius: 2px;
-      &::before {
-        content: '';
-        position: absolute;
-        transform: rotate(-72deg);
-        top: 4px;
-        right: -3px;
-        background-color: #FF3E79;
-        width: 10px;
-        height: 2px;
-      }
-    }
-  }
-
   &__show-text{
     padding-left: 32px;
     margin-top: 24px;

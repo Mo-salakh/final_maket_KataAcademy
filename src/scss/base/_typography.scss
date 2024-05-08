@@ -40,14 +40,14 @@ a {
 .h1-title {
   font-size: 1.75rem;
   line-height: 2.5rem;
-  color: #1B1C21;
+  color: $color-black;
   position: relative;
   &::before {
     content: '';
     position: absolute;
     top: 6px;
     left: -32px;
-    background-color: #41F6D7;
+    background-color: $color-green-active;
     width: 4px;
     height: 32px;
     border-radius: 0 5px 5px 0;
@@ -75,5 +75,101 @@ a {
 
   @include respond(phone) {
     margin: 24px 0 14px;
+  }
+}
+
+
+.h3-title {
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  color: $color-black;
+  margin-bottom: 24px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -20px;
+    background-color: $color-green-active;
+    width: 3px;
+    height: 32px;
+    border-radius: 0 5px 5px 0;
+    
+    @include respond(tab-land) {
+      left: -20px;
+    }
+    
+  }
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid $color-cerise;
+  
+  span {
+    transform: translate(130%, 50%) rotate(35deg);
+    position: relative;
+    background-color: $color-cerise;
+    width: 10px;
+    height: 2px;
+    display: inline-block;
+    border-radius: 2px;
+    &::before {
+      content: '';
+      position: absolute;
+      transform: rotate(-72deg);
+      top: 4px;
+      right: -3px;
+      background-color: $color-cerise;
+      width: 10px;
+      height: 2px;
+    }
+  }
+}
+
+button {
+  font-family: Comic, sans-serif;
+  color: $color-white;
+  padding: 8px 10px;
+  width: 120px;
+  background-color: #FF3E79;
+  border: none;
+  border-radius: 40px;
+  display: flex;
+}
+
+input {
+  font-family: Comic, sans-serif;
+  font-size: 1rem;
+  color: $color-gray-light;
+  padding: 12px 0 12px 16px;
+  padding: 12px 0 12px 16px;
+  border: 1px solid $color-border-input;
+  border-radius: 10px;
+}
+
+.icon-white {
+  
+  span {
+    transform: translate(130%, -150%) rotate(32deg);
+    position: relative;
+    background-color: $color-white;
+    width: 10px;
+    height: 3px;
+    display: inline-block;
+    border-radius: 2px;
+    &::before {
+      content: '';
+      position: absolute;
+      transform: rotate(-72deg);
+      top: 4px;
+      right: -3px;
+      background-color: $color-white;
+      border-radius: 2px;
+      width: 10px;
+      height: 3px;
+    }
   }
 }

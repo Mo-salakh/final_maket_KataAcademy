@@ -5,9 +5,6 @@ const menuOpenBtn = document.querySelector('.burger');
 const menuCloseBtn = document.querySelector('.burger_close');
 const block2 = document.querySelector('.flex-block-2');
 let isHidden = true;
-console.log(burgerMenu);
-console.log(menuOpenBtn);
-console.log(menuCloseBtn);
 
 function openMenu() {
   if (isHidden) {
