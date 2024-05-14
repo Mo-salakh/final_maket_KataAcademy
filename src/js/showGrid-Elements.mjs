@@ -1,6 +1,6 @@
 function showElements() {
 
-const gridElementsParent = document.querySelector('.elementsParent');
+const gridElementsParent = document.querySelector('.elements-parent');
 const btnShowElements = document.querySelector('.btn-show-elements');
 const text = btnShowElements.querySelector('span');
 const icon = btnShowElements.querySelector('i');

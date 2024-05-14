@@ -23,15 +23,15 @@
   }
 
   &__list{
-    align-self: center;
+    margin-top: 40px;
     a {
       color: $color-black;
     }
     @include respond(tab-land) {
-      margin-top: 40px;
+      margin-top: 45px;
     }
     @include respond(phone) {
-      margin-top: 0;
+      margin-top: 20px;
     }
   }
 

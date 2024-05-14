@@ -24,7 +24,7 @@
     @include respond(big-screen) {
       position: absolute;
       right: 20px;
-      top: 2%;
+      top: 24px;
     }
 
     @include respond(tab-land) {

@@ -11,33 +11,31 @@ import showCallMenu from './showCallNav.mjs';
 showCallMenu();
 import swyperBreak from './swyperBreak.mjs';
 swyperBreak();
-import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
 console.log('Works!')
+import showBlocks from './showBlocks.mjs';
+showBlocks();
 
 
 
 
+const swiper = new Swiper(".swiper", {
+  direction: "horizontal",
+  loop: true,
 
-// // Swyper
-// const swiper = new Swiper('.swiper', {
-//   direction: 'horizontal',
-//   loop: true,
+  slidesPerView: "auto",
+  spaceBetween: 16,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 
-//   slidesPerView: 'auto',
-//   spaceBetween: 16,
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true
-//   },
-
-//   breakpoints: {
-//     780: {
-//       toggle: false,
-//       loop: false,
-//       spaceBetween: 'auto',
-//       slidesPerView: 'auto',
-//       centeredSlides: false
-//     }
-//   }
-// })
+  breakpoints: {
+    780: {
+      toggle: false,
+      loop: false,
+      spaceBetween: "auto",
+      slidesPerView: "auto",
+      centeredSlides: false,
+    },
+  },
+});

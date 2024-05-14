@@ -31,3 +31,35 @@ body {
   -o-z-index: 5;
   z-index: 5;
 }
+
+.textParent {
+  height: 5.9rem;
+  overflow: hidden;
+}
+
+.elements-parent {
+  height: 170px;
+  overflow: hidden;
+  @include respond(phone) {
+    height: auto;
+    overflow: visible;
+  }
+}
+
+.cards-parent {
+  height: 170px;
+  overflow: hidden;
+
+  @include respond(phone) {
+    overflow: visible;
+  }
+}
+
+.blocks-parent {
+  height: 170px;
+  overflow: hidden;
+
+  @include respond(phone) {
+    overflow: visible;
+  }
+}
